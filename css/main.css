@@ -25,7 +25,7 @@ body {
 .summary {
   width: 525px;
   margin: 0 auto;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   overflow: hidden;
   position: relative;
   border-radius: 3rem;
@@ -68,7 +68,7 @@ body {
         font-weight: 700;
         color: white; }
       .summary__left .score-description {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #ccc;
         text-align: center; }
   .summary__right {
@@ -78,7 +78,9 @@ body {
     display: flex;
     flex-direction: column; }
     .summary__right .text {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: 700; }
     .summary__right--reaction, .summary__right--memory, .summary__right--verbal, .summary__right--visual {
       display: flex;
       align-items: center;
@@ -86,7 +88,7 @@ body {
       border-radius: .5rem;
       margin: .3rem 0; }
       .summary__right--reaction .icon, .summary__right--memory .icon, .summary__right--verbal .icon, .summary__right--visual .icon {
-        width: 1.8rem; }
+        width: 1.4rem; }
       .summary__right--reaction .category, .summary__right--memory .category, .summary__right--verbal .category, .summary__right--visual .category {
         display: flex;
         align-items: center;
@@ -117,7 +119,7 @@ body {
       padding: 1rem 1.5rem;
       color: #1125d6; }
     .summary__right .btn {
-      margin-top: 2rem;
+      margin-top: 4rem;
       background: #303b59;
       font-size: 1.4rem;
       font-weight: 500;
