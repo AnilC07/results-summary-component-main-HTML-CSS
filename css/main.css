@@ -6,7 +6,9 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "Hanken Grotesk", sans-serif;
+  line-height: 1.5; }
 
 body {
   max-height: 100vh;
@@ -14,25 +16,115 @@ body {
 
 .container {
   width: 1200px;
-  height: 700px;
-  margin: 0 auto;
+  margin: 10rem auto;
+  padding: 10rem 0;
   background-color: white;
-  border: 1px solid red;
-  position: relative; }
+  position: relative;
+  box-shadow: 1px 3px 16px #333; }
 
 .summary {
-  width: 600px;
+  width: 525px;
   margin: 0 auto;
-  border: 1px solid black;
+  font-size: 1.8rem;
+  overflow: hidden;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px; }
+  border-radius: 3rem;
+  border-radius: 20px;
+  box-shadow: 0px 0 60px rgba(0, 0, 0, 0.4);
+  display: flex; }
+  .summary__left {
+    width: 50%;
+    background: linear-gradient(to top, #312cea 85%, rgba(50, 44, 234, 0.721) 100%);
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 0rem 2rem 2rem 0rem;
+    padding-bottom: 3rem; }
+    .summary__left .result-text {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white; }
+    .summary__left .result-circle {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background: linear-gradient(to top, rgba(50, 44, 234, 0.027) 15%, rgba(1, 0, 22, 0.721) 190%); }
+    .summary__left .score {
+      color: white;
+      font-size: 3rem;
+      font-weight: 700; }
+      .summary__left .score-comment {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white; }
+      .summary__left .score-description {
+        font-size: 1.5rem;
+        color: #ccc;
+        text-align: center; }
+  .summary__right {
+    width: 50%;
+    flex: 1;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column; }
+    .summary__right .text {
+      margin-bottom: 2rem; }
+    .summary__right--reaction, .summary__right--memory, .summary__right--verbal, .summary__right--visual {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: .5rem;
+      margin: .3rem 0; }
+      .summary__right--reaction .icon, .summary__right--memory .icon, .summary__right--verbal .icon, .summary__right--visual .icon {
+        width: 1.8rem; }
+      .summary__right--reaction .category, .summary__right--memory .category, .summary__right--verbal .category, .summary__right--visual .category {
+        display: flex;
+        align-items: center;
+        gap: 1rem; }
+      .summary__right--reaction .score, .summary__right--memory .score, .summary__right--verbal .score, .summary__right--visual .score {
+        color: black; }
+        .summary__right--reaction .score span, .summary__right--memory .score span, .summary__right--verbal .score span, .summary__right--visual .score span {
+          color: #ccc;
+          font-weight: 700; }
+    .summary__right--reaction {
+      background-color: rgba(255, 85, 85, 0.3);
+      color: inherit;
+      padding: 1rem 1.5rem;
+      color: #ff5555; }
+    .summary__right--memory {
+      background-color: rgba(255, 178, 30, 0.3);
+      color: inherit;
+      padding: 1rem 1.5rem;
+      color: #ffb21e; }
+    .summary__right--verbal {
+      background-color: rgba(0, 187, 143, 0.3);
+      color: inherit;
+      padding: 1rem 1.5rem;
+      color: #00bb8f; }
+    .summary__right--visual {
+      background-color: rgba(17, 37, 214, 0.3);
+      color: inherit;
+      padding: 1rem 1.5rem;
+      color: #1125d6; }
+    .summary__right .btn {
+      margin-top: 2rem;
+      background: #303b59;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: white;
+      border: none;
+      border-radius: 100px;
+      padding: 1.5rem 0;
+      cursor: pointer; }
+      .summary__right .btn:active {
+        background: linear-gradient(to top, #312cea 85%, rgba(50, 44, 234, 0.721) 100%); }
