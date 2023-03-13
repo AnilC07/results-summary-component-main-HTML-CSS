@@ -1,0 +1,69 @@
+// Variables
+// Font
+$font: 'Hanken Grotesk',
+sans-serif;
+// Colors
+$color-primary: rgba(99, 64, 252, .6);
+$color-bg: rgba(240, 240, 240, .8);
+
+
+*,
+:before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-height: 100vh;
+    background-color: $color-bg;
+}
+
+.container {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+
+    background-color: white;
+
+    border: 1px solid red;
+
+    position: relative;
+}
+
+.summary {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    &__left{
+
+
+    }
+
+    &__right{
+
+        &--reaction{}
+
+        &--memory{}
+
+        &--verbal{}
+        
+        &--visu
