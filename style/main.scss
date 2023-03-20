@@ -3,7 +3,7 @@
 $font: 'Hanken Grotesk',
 sans-serif;
 // Colors
-$color-primary: linear-gradient(to top,rgb(49, 44, 234) 85%, rgba(50, 44, 234, 0.721) 100%);
+$color-primary: linear-gradient(to top, rgb(49, 44, 234) 85%, rgba(50, 44, 234, 0.721) 100%);
 $color-bg: rgba(240, 240, 240, .8);
 $color-text: #ccc;
 
@@ -28,13 +28,14 @@ body {
 }
 
 .container {
-    width: 1200px;
-    margin: 10rem auto;
-    padding: 10rem 0;
-    background-color: white;
-    position: relative;
-    box-shadow: 1px 3px 16px #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 100px 0;
 }
+
+
 
 .summary {
     width: 525px;
@@ -44,7 +45,7 @@ body {
     position: relative;
     border-radius: 3rem;
     border-radius: 20px;
-    box-shadow: 0px 0 60px rgba(0,0,0,.4);
+    box-shadow: 0px 0 60px rgba(0, 0, 0, .4);
     display: flex;
 
     &__left {
@@ -58,7 +59,7 @@ body {
         border-radius: 0rem 2rem 2rem 0rem;
         padding-bottom: 3rem;
 
-        .result-text{
+        .result-text {
             font-size: 2rem;
             font-weight: 700;
             color: white;
@@ -77,21 +78,21 @@ body {
             -moz-border-radius: 50%;
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
-            background: linear-gradient(to top,rgba(50, 44, 234, 0.027) 15%, rgba(1, 0, 22, 0.721) 190%);
+            background: linear-gradient(to top, rgba(50, 44, 234, 0.027) 15%, rgba(1, 0, 22, 0.721) 190%);
         }
 
-        .score{
-            color:white;
+        .score {
+            color: white;
             font-size: 3rem;
             font-weight: 700;
 
-            &-comment{
+            &-comment {
                 font-size: 2rem;
                 font-weight: 700;
                 color: white;
             }
 
-            &-description{
+            &-description {
                 font-size: 1.4rem;
                 color: $color-text;
                 text-align: center;
@@ -173,7 +174,7 @@ body {
 
         .btn {
             margin-top: 4rem;
-            background: rgb(48,59,89);
+            background: rgb(48, 59, 89);
             font-size: 1.4rem;
             font-weight: 500;
             color: white;
@@ -182,9 +183,47 @@ body {
             padding: 1.5rem 0;
             cursor: pointer;
 
-            &:active{
-                background:$color-primary;
+            &:active {
+                background: $color-primary;
             }
+        }
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .container {
+        display: block;
+        margin:0
+    }
+
+    .summary {
+        width: 100%;
+        margin: 0;
+        font-size: 1.3rem;
+        overflow: unset;
+        position: relative;
+        border-radius: 0rem;
+        // border-radius: 20px;
+        box-shadow: 0px 0 60px rgba(0, 0, 0, .4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__left {
+            width: 100%;
+            background: $color-primary;
+            padding: 1rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            border-radius: 0rem 0rem 2rem 2rem;
+            padding-bottom: 3rem;
+        }
+
+        &__right {
+            width: 100%;
         }
     }
 }
